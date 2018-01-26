@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Bienvenue sur {{title}}!
+  </h1>
+</div>
+
+<mat-tab-group>
+  <mat-tab label="Liste des personnages">
+    <mat-grid-list cols="4" rowHeight="30px">
+      <mat-grid-tile>Nom</mat-grid-tile>
+      <mat-grid-tile>Type</mat-grid-tile>
+      <mat-grid-tile>Année de naissance</mat-grid-tile>
+      <mat-grid-tile>Couleur des yeux</mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="30px" *ngFor="let char of characters | async">
+      <mat-grid-tile>{{ char.name }}</mat-grid-tile>
+      <mat-grid-tile>{{ char.gender }}</mat-grid-tile>
+      <mat-grid-tile>{{ char.birth_year }}</mat-grid-tile>
+      <mat-grid-tile>{{ char.eye_color }}</mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab>
+  <mat-tab label="Détail"></mat-tab>
+</mat-tab-group>
