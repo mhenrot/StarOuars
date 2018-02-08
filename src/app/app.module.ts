@@ -6,10 +6,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 
+import { AppComponent } from './components/app.component';
+import { AppRouterModule } from './app-router.module';
 
-import { AppComponent } from './app.component';
-import { CharacterComponent } from './character/character.component';
-import { RetrieveDataService } from './retrieve-data.service';
+import { CharacterComponent } from './components/character/character.component';
+import { RetrieveDataService } from './services/retrieve-data.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTabsModule,
     HttpClientModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    AppRouterModule
   ],
   providers: [
     RetrieveDataService, {

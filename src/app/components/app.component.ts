@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Character } from './models/character';
+import { Character } from '../models/character';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
-import { RetrieveDataService } from './retrieve-data.service';
+import { RetrieveDataService } from '../services/retrieve-data.service';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
