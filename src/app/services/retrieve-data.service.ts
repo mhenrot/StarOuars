@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
-import { PeopleResponse } from './models/peopleResponse';
-import { Character } from './models/character';
+import { PeopleResponse } from '../models/peopleResponse';
+import { Character } from '../models/character';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
